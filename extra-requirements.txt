@@ -1,0 +1,4 @@
+# Redis as a django cache
+django-redis==4.10.0
+# Use uwsgi as application server
+uwsgi==2.0.20
