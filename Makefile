@@ -19,5 +19,5 @@ clone: ## Clone code, to custom repo and branch `make repository=https://github.
 .PHONY: clone
 
 build: ## Build docker image
-	docker build . -t openedx-insights
+	docker build . -t build:openedx-insights
 .PHONY: build
