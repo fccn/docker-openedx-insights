@@ -75,8 +75,7 @@ ENV DJANGO_SETTINGS_MODULE course_discovery.settings.docker_production
 
 EXPOSE 8000
 CMD uwsgi \
-    --static-map /static=/openedx/insights/analytics_dashboard/assets \
-    --static-map /media=/openedx/insights/analytics_dashboard/media \
+    --static-map /static=/openedx/insights/assets \
     --http 0.0.0.0:8000 \
     --thunder-lock \
     --single-interpreter \
