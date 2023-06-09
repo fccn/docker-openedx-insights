@@ -65,7 +65,7 @@ COPY insights .
 
 # Collect static assets
 COPY ./settings/assets.py ./analytics_dashboard/settings/assets.py
-RUN DJANGO_SETTINGS_MODULE=insights.settings.assets make static
+RUN DJANGO_SETTINGS_MODULE=analytics_dashboard.settings.assets make static
 
 # copy docker production settings
 COPY ./settings/docker_production.py ./analytics_dashboard/settings/docker_production.py
